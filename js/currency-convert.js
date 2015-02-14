@@ -1,8 +1,8 @@
 document.getElementById('convert').onclick = function () {
-	parse();
+	query();
 }
 
-function parse() {
+function query() {
 	var src_beg = 'http://www.freecurrencyconverterapi.com/api/v3/convert?q=';
 	var src_end = '&compact=y&callback=myCallback';
 	var src = src_beg + createQuery() + src_end;
